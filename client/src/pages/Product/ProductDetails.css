@@ -1,0 +1,85 @@
+.product-page {
+  width: 100%;
+}
+
+/* Hero */
+.product-hero {
+  background: #d9eff3;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.product-hero h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+/* Main layout */
+.product-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Image */
+.product-image img {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 40px;
+}
+
+/* Info */
+.product-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.product-desc {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.product-price {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Actions */
+.product-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.product-actions input {
+  width: 70px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.product-actions button {
+  padding: 10px 24px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Meta */
+.product-meta p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,131 @@
+.shop-page {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 80px;
+}
+
+/* HERO */
+.shop-hero {
+  background: #d7edf2;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.shop-hero h1 {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.shop-hero p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #444;
+}
+
+/* TOOLBAR */
+.shop-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto 30px;
+}
+
+.shop-filter {
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 1px solid #111;
+  font-size: 15px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* GRID */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+}
+
+.shop-card {
+  text-decoration: none;
+  color: #111;
+}
+
+.shop-img {
+  background: #fafafa;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 200ms ease;
+}
+
+.shop-img img {
+  width: 75%;
+  transition: transform 200ms ease;
+}
+
+.shop-card:hover .shop-img img {
+  transform: scale(1.08);
+}
+
+.shop-card h4 {
+  margin: 14px 0 6px;
+  font-weight: 500;
+}
+
+.shop-price {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.shop-price span {
+  margin-left: 8px;
+  font-weight: 400;
+  color: #888;
+  text-decoration: line-through;
+}
+
+/* PAGINATION */
+.shop-pagination {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* 👈 THIS controls spacing */
+  margin-top: 40px;
+
+}
+
+.shop-pagination button {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: 1px solid #111;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .shop-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shop-hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+}

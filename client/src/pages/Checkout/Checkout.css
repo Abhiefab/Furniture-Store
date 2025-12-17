@@ -1,0 +1,106 @@
+.checkout-page {
+  min-height: calc(100vh - 80px);
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #f6f8fb, #ffffff);
+  font-family: "Inter", system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITLE */
+.checkout-page h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+/* CARD */
+.checkout-card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   ORDER ITEM (🔥 FIX)
+   ========================= */
+.checkout-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.checkout-item img {
+  width: 80px;              /* ✅ FIX */
+  height: 80px;             /* ✅ FIX */
+  object-fit: contain;      /* ✅ FIX */
+  border-radius: 10px;
+  background: #f9fafb;
+  padding: 8px;
+  flex-shrink: 0;           /* ✅ FIX */
+}
+
+.checkout-item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* =========================
+   SUMMARY
+   ========================= */
+.checkout-summary-center {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.checkout-summary-center p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.place-order-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.place-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .checkout-item {
+    align-items: flex-start;
+  }
+}
