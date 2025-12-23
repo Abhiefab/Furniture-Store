@@ -10,9 +10,7 @@ export default function MyOrders() {
   const [loading, setLoading] = useState(true);
   const [removingId, setRemovingId] = useState(null);
 
-  // ===========================
-  // FETCH ORDERS
-  // ===========================
+  
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
@@ -33,9 +31,7 @@ export default function MyOrders() {
     if (token) fetchOrders();
   }, [token]);
 
-  // ===========================
-  // CANCEL ORDER (DELETE IN BACKEND)
-  // ===========================
+ 
   const cancelOrder = async (orderId) => {
     if (!window.confirm("Are you sure you want to cancel this order?")) return;
 
@@ -49,7 +45,7 @@ export default function MyOrders() {
         }
       );
 
-      // ⏳ DELAY REMOVAL FOR UX
+     
       setTimeout(() => {
         setOrders((prev) =>
           prev.filter((order) => order._id !== orderId)
@@ -62,9 +58,7 @@ export default function MyOrders() {
     }
   };
 
-  // ===========================
-  // UI STATES
-  // ===========================
+  
   if (loading) return <p className="orders-loading">Loading orders...</p>;
 
   if (orders.length === 0) {
@@ -76,9 +70,7 @@ export default function MyOrders() {
     );
   }
 
-  // ===========================
-  // UI
-  // ===========================
+ 
   return (
     <section className="my-orders">
       <h1>My Orders</h1>

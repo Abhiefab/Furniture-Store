@@ -6,7 +6,7 @@ export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [selectedAddress, setSelectedAddress] = useState(null);
 
-  // 🔑 Restore address on refresh
+  
   useEffect(() => {
     const saved = localStorage.getItem("address");
     if (saved) {
