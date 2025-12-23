@@ -29,7 +29,7 @@ The focus of this project is teamwork, clean code structure, and real-world deve
 - HTML
 - CSS
 - JavaScript
-- React (if applicable)
+- React
 
 ### Backend
 - Node.js
