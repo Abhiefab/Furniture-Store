@@ -67,7 +67,7 @@ Work was distributed collaboratively, with everyone involved across all layers o
   GitHub: https://github.com/sanib9999
 
 - **Vedant**  
-  GitHub: https://github.com/vedantt_1809
+  GitHub: https://github.com/vedant778
 
 ---
 
